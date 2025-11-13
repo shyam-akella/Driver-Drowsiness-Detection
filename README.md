@@ -26,13 +26,11 @@ This project was a deep dive into building an end-to-end computer vision pipelin
 
 
 **Note:** The large trained model file (e.g., `.h5` or `.dat`) is not included in this repository due to GitHub's file size limits. The scripts `project2.py` contain the core logic for running and training the model.
-* **Install dependencies:**
-pip install opencv-python dlib numpy imutils
-Download the dlib facial landmark predictor:
-**File: shape_predictor_68_face_landmarks.dat*
-Extract and place it in the project directory.
-**Usage:**
-Run the script with:
-**python project2.py**
+## Install dependencies:
+* **pip install opencv-python dlib numpy imutils**
+* **Download the dlib facial landmark predictor:** **File: shape_predictor_68_face_landmarks.dat*
+**Extract and place it in the project directory.**
+## Usage:
+* **Run the script with:** python project2.py
 
-Make sure your webcam is enabled. The system will start detecting your eyes and trigger an alert if drowsiness is detected.
+* **Make sure your webcam is enabled. The system will start detecting your eyes and trigger an alert if drowsiness is detected.**
