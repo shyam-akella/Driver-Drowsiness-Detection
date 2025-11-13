@@ -1,65 +1,38 @@
-Overview:
+# Real-Time Driver Drowsiness Detection System
 
-The Drowsiness Detection System is a computer vision–based project that monitors a driver’s alertness in real time. It uses OpenCV and dlib to detect facial landmarks and calculate the Eye Aspect Ratio (EAR), determining if the driver’s eyes remain closed for an extended period which is a strong sign of drowsiness. When detected, the system triggers an audio alert to wake the driver and prevent accidents caused by fatigue.
+This project is a computer vision-based system built with Python, OpenCV, and Keras/TensorFlow to monitor a driver's eyes in real-time. It is designed to prevent accidents by detecting signs of driver fatigue and triggering an immediate audio-visual alert.
 
-How It Works:
+The core of the system monitors the driver's **Eye Aspect Ratio (EAR)**. When the calculated EAR drops below a specific threshold for a set number of frames, the system concludes the driver is drowsy and activates an alarm.
 
-The webcam captures live video of the driver’s face.
+---
 
-dlib’s 68-point facial landmark detector identifies eye coordinates.
+## Tech Stack
 
-The Eye Aspect Ratio (EAR) is computed using distances between specific eye landmarks.
-
-If the EAR value stays below a threshold for a certain number of frames, the system classifies it as drowsiness.
-
-An audio alert plays to warn the driver.
-
-Tech Stack:
-
-Python 3.x
-
-OpenCV – Real-time image and video processing
-
-dlib – Facial landmark detection
-
-NumPy – Numerical computation
-
-Features:
-
-Real-time face and eye detection
-
-EAR-based drowsiness detection logic
-
-Instant audio alerts for safety
-
-Adjustable sensitivity (EAR threshold & frame count)
-
-Lightweight and efficient
-
-Installation:
-
-Clone this repository:
-
-git clone https://github.com/yourusername/drowsiness-detection-system.git
-cd drowsiness-detection-system
+* **Language:** Python
+* **Core Libraries:** OpenCV (for real-time video capture and processing)
+* **Machine Learning:** Keras with TensorFlow (for building and training the model)
+* **Facial Landmarks:** dlib (for real-time facial landmark detection)
+* **Data Handling:** NumPy (for numerical operations)
 
 
-Install dependencies:
+## What I Learned (Project Highlights)
 
+This project was a deep dive into building an end-to-end computer vision pipeline. The key skills I developed were:
+
+* **Machine Learning Implementation:** Successfully implemented and trained a Convolutional Neural Network (CNN) to classify eye states (open vs. closed).
+* **Computer Vision:** Gained hands-on experience using OpenCV to capture video, process images, and draw contours and text on-screen in real-time.
+* **Algorithm Development:** Researched and implemented the Eye Aspect Ratio (EAR) formula from a scientific paper, translating academic theory into a practical, working algorithm.
+* **Problem-Solving:** Managed the challenge of integrating a high-speed video feed with a predictive ML model, all while running in a single, responsive application.
+
+
+**Note:** The large trained model file (e.g., `.h5` or `.dat`) is not included in this repository due to GitHub's file size limits. The scripts `script1.py` and `script2.py` contain the core logic for running and training the model.
+**Install dependencies:**
 pip install opencv-python dlib numpy imutils
-
 Download the dlib facial landmark predictor:
-
-File: shape_predictor_68_face_landmarks.dat
-
-Download link: Dlib Model Download
-
+**File: shape_predictor_68_face_landmarks.dat*
 Extract and place it in the project directory.
-
-Usage:  
-
+**Usage:**
 Run the script with:
-
-python project2.py
+**python project2.py**
 
 Make sure your webcam is enabled. The system will start detecting your eyes and trigger an alert if drowsiness is detected.
