@@ -25,8 +25,8 @@ This project was a deep dive into building an end-to-end computer vision pipelin
 * **Problem-Solving:** Managed the challenge of integrating a high-speed video feed with a predictive ML model, all while running in a single, responsive application.
 
 
-**Note:** The large trained model file (e.g., `.h5` or `.dat`) is not included in this repository due to GitHub's file size limits. The scripts `script1.py` and `script2.py` contain the core logic for running and training the model.
-**Install dependencies:**
+**Note:** The large trained model file (e.g., `.h5` or `.dat`) is not included in this repository due to GitHub's file size limits. The scripts `project2.py` contain the core logic for running and training the model.
+* **Install dependencies:**
 pip install opencv-python dlib numpy imutils
 Download the dlib facial landmark predictor:
 **File: shape_predictor_68_face_landmarks.dat*
