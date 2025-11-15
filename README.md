@@ -1,4 +1,4 @@
-# Real-Time Driver Drowsiness Detection System
+# Driver Drowsiness Detection 
 
 This project is a computer vision-based system built with Python, OpenCV, and Keras/TensorFlow to monitor a driver's eyes in real-time. It is designed to prevent accidents by detecting signs of driver fatigue and triggering an immediate audio-visual alert.
 
